@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.higodev.api.controllers.dtos.BuyDto;
 
 @RestController
-@RequestMapping(path = "compras")
+@RequestMapping(path = "/buy")
 public class BuyController {
 
 	@PostMapping
