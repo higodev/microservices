@@ -14,9 +14,9 @@ public class BuyService {
 	public void makeBuy(BuyDto buyDto) {
 		RestTemplate client = new RestTemplate();
 		ResponseEntity<InfoProviderDto> exchange = client.exchange(
-				"http://localhost:8081/info" + buyDto.getAddress().getState(), HttpMethod.GET, null,
+				"http://localhost:8081/info/" + buyDto.getAddress().getState(), HttpMethod.GET, null,
 				InfoProviderDto.class);
-		System.out.println(exchange.getBody().getAddressDto());
+		System.out.println("Fornecedor eh de " + exchange.getBody().getState());
 	}
 
 }

@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class InfoProviderDto {
-	private AddressDto addressDto;
+	private String state;
 }
